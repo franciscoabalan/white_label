@@ -25,7 +25,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'jwt', '~> 2.2'
 gem 'pry-rails', '~> 0.3.9'
 
-# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS)
 # gem 'rack-cors'
 
 group :development, :test do
@@ -36,7 +36,6 @@ end
 
 group :development do
   gem 'listen', '~> 3.2'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
