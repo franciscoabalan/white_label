@@ -34,4 +34,8 @@ module WhiteLabel
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
   end
+
+  def self.credentials
+  	@credentials ||= Rails.application.credentials[Rails.env.to_sym]
+  end
 end
