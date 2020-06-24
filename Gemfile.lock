@@ -190,7 +190,6 @@ DEPENDENCIES
   rubocop (~> 0.86.0)
   spring (~> 2.1.0)
   spring-watcher-listen (~> 2.0.0)
-  tzinfo-data
 
 RUBY VERSION
    ruby 2.6.2p47
