@@ -2,6 +2,8 @@
 
 AllCops:
   Exclude:
+    - spec/support/spec_helper.rb
+    - spec/rails_helper.rb
     - db/**/*
     - docs/**/*
     - config/**/*
@@ -14,6 +16,9 @@ Style/Documentation:
 Layout/LineLength:
   Max: 99
 
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
 
 Style/FrozenStringLiteralComment:
   Enabled: false

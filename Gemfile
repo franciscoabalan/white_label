@@ -32,12 +32,20 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '~> 11.1'
   gem 'dotenv-rails', '~> 2.7.5'
+  gem 'faker', '~> 2.13'
 end
 
 group :development do
+  gem 'factory_bot_rails', '~> 6.0.0'
   gem 'listen', '~> 3.2'
+  gem 'rspec-rails', '~> 4.0.1'
   gem 'spring', '~> 2.1.0'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :test do
+  gem 'database_cleaner-active_record', '~> 1.8.0'
+  gem 'shoulda-matchers', '~> 4.0'
 end
 
 gem 'rubocop', '~> 0.86.0', require: false
