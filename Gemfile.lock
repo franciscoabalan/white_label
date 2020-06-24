@@ -179,7 +179,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
-  byebug
+  byebug (~> 11.1)
   dotenv-rails
   jwt (~> 2.2)
   listen (~> 3.2)
