@@ -210,9 +210,9 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
-  byebug
+  byebug (~> 11.1)
   database_cleaner-active_record (~> 1.8.0)
-  dotenv-rails
+  dotenv-rails (~> 2.7.5)
   factory_bot_rails (~> 6.0.0)
   faker (~> 2.13)
   jwt (~> 2.2)
@@ -222,11 +222,10 @@ DEPENDENCIES
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.1)
   rspec-rails (~> 4.0.1)
-  rubocop
+  rubocop (~> 0.86.0)
   shoulda-matchers (~> 4.0)
-  spring
+  spring (~> 2.1.0)
   spring-watcher-listen (~> 2.0.0)
-  tzinfo-data
 
 RUBY VERSION
    ruby 2.6.2p47
