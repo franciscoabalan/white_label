@@ -1,0 +1,19 @@
+# This is the configuration used to check the rubocop source code.
+
+AllCops:
+  Exclude:
+    - db/**/*
+    - docs/**/*
+    - config/**/*
+    - bin/**/*
+    - script/**/*
+
+Style/Documentation:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 99
+
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
