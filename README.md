@@ -1,5 +1,7 @@
 # README
 
+[![Build Status](https://travis-ci.com/franciscoabalan/white_label.svg?branch=master)](https://travis-ci.org/wolox-training/pj-fa-rails)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
