@@ -1,3 +1,3 @@
 # README
 
-[![Build Status](https://travis-ci.com/franciscoabalan/PJ-BackTraining-Blas.svg?branch=master)]
+[![Build Status](https://travis-ci.com/franciscoabalan/white_label.svg?branch=master)]
