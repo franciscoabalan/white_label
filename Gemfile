@@ -5,8 +5,8 @@ ruby '2.6.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+# Use PostgreSQL as the database for Active Record
+gem 'pg', '~> 0.18.4'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -25,21 +25,27 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'jwt', '~> 2.2'
 gem 'pry-rails', '~> 0.3.9'
 
-# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS)
 # gem 'rack-cors'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'dotenv-rails'
+  gem 'byebug', '~> 11.1'
+  gem 'dotenv-rails', '~> 2.7.5'
+  gem 'faker', '~> 2.13'
 end
 
 group :development do
+  gem 'factory_bot_rails', '~> 6.0.0'
   gem 'listen', '~> 3.2'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  gem 'rspec-rails', '~> 4.0.1'
+  gem 'spring', '~> 2.1.0'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+group :test do
+  gem 'database_cleaner-active_record', '~> 1.8.0'
+  gem 'shoulda-matchers', '~> 4.0'
+end
+
+gem 'rubocop', '~> 0.86.0', require: false
